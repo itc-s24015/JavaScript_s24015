@@ -12,6 +12,26 @@
 <section class="contents">
 </section>
 <script>
+  //オブジェクト
+  var person = {name: 'Ken', age: 14}; 
+ alert('My name is ' + person.name + '. I,m' + person.age + ' years old.'); 
+
+//プロパティを取り出す
+ var person = {name: 'Ken', age: 14};
+person.name = 'Risa'; 
+person.gender = 'woman'; 
+alert(person.name + ' is ' + person.gender); 
+
+//プロパティに関数を入れる
+var person = {name: 'Ken', age: 14};
+person.name = 'Risa';
+person.gender = 'woman';
+person.display_gender = function() { 
+  alert(person.name + ' is ' + person.gender); 
+} 
+
+person.display_gender(); 
+
 </script>
 </body>
 </html>

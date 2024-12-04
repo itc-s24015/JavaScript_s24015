@@ -12,6 +12,28 @@
 <section class="contents">
 </section>
 <script>
+  //if文の使い方
+  //varは変数の宣言
+  var tax_rate = 0.10;
+  if(tax_rate == 0.10) { 
+    alert(100 * tax_rate);　
+    alert(500 * tax_rate);
+  } else { 
+    alert('税率を10%にしてください。'); 
+  } 
+
+  //ユーザーに質問をする￼
+  //キャンセルを押しても何も表示されない
+  confirm('この処理を許可しますか？'); 
+
+//if文にconfirm関数を入れる
+  if(confirm('この処理を許可しますか？')){; 
+    alert('OKが選択されました'); 
+  } else { 
+    alert('キャンセルが選択されました'); 
+  } 
+
+
 </script>
 </body>
 </html>
